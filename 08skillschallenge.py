@@ -25,7 +25,14 @@ riddleOfSecretsButton.click()
 # twoMerchantsFirst = browser.find_element_by_xpath("//div/span/b[text()][1]");
 # print (twoMerchantsFirst)
 
+# Simple approach
+richest_merchant_name = browser.find_element_by_xpath("//p[text()='3000'] /.. /span")
+merchant_input = browser.find_element_by_id('r3Input')
+merchant_answer_btn = browser.find_element_by_css_selector("button#r3Butn")
 
+check_btn = browser.find_element_by_css_selector('button[name="checkButn"]')
+
+complete_msg = browser.find_element_by_css_selector("div#trialCompleteBanner > h4")
 
 browser.quit()
 
