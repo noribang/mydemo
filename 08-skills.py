@@ -52,7 +52,7 @@ assert complete_msg.text == 'Trial Complete'
 
 print ('Final: ', complete_msg.text)
 
-# Wait 4 seconds before closing
-# time.sleep(4)
+# Wait 5 seconds before closing
+time.sleep(5)
 # Close browser
-# browser.quit()
+browser.quit()
